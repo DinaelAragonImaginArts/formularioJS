@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <script
+      src="https://kit.fontawesome.com/9705850353.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-xl-6 text-center">
+          <div
+            class="d-flex justify-content-center flex-wrap align-items-center"
+          >
+            <img class="p-2 logo" src="proprofit-logo.png" alt="logo" />
+            <h2 id="heading" class="p-3 font-weight-bold">Job Application</h2>
+          </div>
+          <br />
+          <div class="card px-0 pb-0 mb-3">
+            <form id="msform">
+              <!-- progressbar -->
+              <ul id="progressbar">
+                <li class="active" id="account">
+                  <strong>Basic Information</strong>
+                </li>
+                <li id="personal"><strong>Work Experience</strong></li>
+                <li id="payment"><strong>Knowledge</strong></li>
+                <li id="other"><strong>Other</strong></li>
+                <li id="confirm"><strong>Final</strong></li>
+              </ul>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped progress-bar-animated"
+                  role="progressbar"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <br />
+
+              <!-- fieldsets 1-->
+              <fieldset>
+                <br />
+                <div class="form-card">
+                  <div class="row">
+                    <div class="col-6">
+                      <h2 class="fs-title">Basic Information</h2>
+                    </div>
+                    <div class="col-6">
+                      <h2 class="steps">Step 1 - 4</h2>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="form-row">
+                    <div class="col-12 col-sm-6">
+                      <label class="fieldlabels">First Name *</label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label class="fieldlabels">Last Name *</label>
+                      <input
+                        type="text"
+                        name="lastName"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-12 col-sm-6">
+                      <label class="fieldlabels">Email Address *</label>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label class="fieldlabels">Second Email Address</label>
+                      <input
+                        type="email"
+                        name="email2"
+                        placeholder="Second Email Address"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-12 col-sm-6">
+                      <label class="fieldlabels">Date Of Birth *</label>
+                      <input
+                        type="date"
+                        name="birth"
+                        placeholder="Date Of Birth"
+                      />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label class="fieldlabels">Phone Number *</label>
+                      <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone Number"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-12 col-sm-6">
+                      <label class="fieldlabels">City *</label>
+                      <input type="text" name="city" placeholder="City" />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label class="fieldlabels">Cologne *</label>
+                      <input type="text" name="cologne" placeholder="Cologne" />
+                    </div>
+                    <div class="col">
+                      <p class="fieldlabels">Gender</p>
+                      <div class="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          id="customRadio1"
+                          name="customRadio"
+                          class="custom-control-input"
+                        />
+                        <label class="custom-control-label" for="customRadio1"
+                          >Male</label
+                        >
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          id="customRadio2"
+                          name="customRadio"
+                          class="custom-control-input"
+                        />
+                        <label class="custom-control-label" for="customRadio2"
+                          >Female</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input
+                  type="button"
+                  name="next"
+                  class="next action-button"
+                  value="Next"
+                />
+              </fieldset>
+
+              <!-- fieldsets 2 -->
+              <fieldset>
+                <br />
+                <div class="form-card">
+                  <div class="row">
+                    <div class="col-6">
+                      <h2 class="fs-title">Work Experience</h2>
+                    </div>
+                    <div class="col-6">
+                      <h2 class="steps">Step 2 - 4</h2>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="form-row">
+                    <div class="col-12 col-sm-4">
+                      <label class="fieldlabels">Last Job</label>
+                      <input
+                        type="text"
+                        name="lastJob"
+                        placeholder="Last Job"
+                      />
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <label class="fieldlabels">Position Held</label>
+                      <input
+                        type="text"
+                        name="positionHeld"
+                        placeholder="Position Held"
+                      />
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <label class="fieldlabels"
+                        >Final Monthly Salary (dlls)</label
+                      >
+                      <input
+                        type="number"
+                        name="finalMonthlySalary"
+                        placeholder="Final Monthly Salary"
+                        min="1000"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-12 col-sm-6">
+                      <label class="fieldlabels">Admition Date</label>
+                      <input
+                        type="date"
+                        name="admitionDate"
+                        placeholder="Admition Date"
+                      />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label class="fieldlabels">Leaving Date</label>
+                      <input
+                        type="date"
+                        name="leavingDate"
+                        placeholder="Leaving Date"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-12 col-sm-12">
+                      <label class="fieldlabels">Describe Your Position</label>
+                      <textarea
+                        name="describe"
+                        placeholder="Describe you position..."
+                        rows="8"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <input
+                  type="button"
+                  name="next2"
+                  class="next2 action-button"
+                  value="Next"
+                />
+                <input
+                  type="button"
+                  name="previous"
+                  class="previous action-button-previous"
+                  value="Previous"
+                />
+              </fieldset>
+
+              <!-- fieldsets 3 -->
+              <fieldset>
+                <div class="form-card">
+                  <div class="row">
+                    <div class="col-6">
+                      <h2 class="fs-title">Knowledge</h2>
+                    </div>
+                    <div class="col-6">
+                      <h2 class="steps">Step 3 - 4</h2>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="row">
+                    <div class="col-12 col-sm-6">
+                      <h4 class="title-section">
+                        English <span class="required-field">*</span>
+                      </h4>
+                      <div class="form-row">
+                        <div class="col-12 col-sm-4">
+                          <label class="fieldlabels">Spoken %</label>
+                          <input type="number" name="spoken" />
+                        </div>
+                        <div class="col-12 col-sm-4">
+                          <label class="fieldlabels">Read %</label>
+                          <input type="number" name="read" />
+                        </div>
+                        <div class="col-12 col-sm-4">
+                          <label class="fieldlabels">Grammar %</label>
+                          <input type="number" name="grammar" />
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="form-row">
+                        <div class="col-12 mt-4">
+                          <label class="fieldlabels">Other Lenguage</label>
+                          <input type="text" name="other" />
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-4">
+                          <label class="fieldlabels">Spoken %</label>
+                          <input type="number" name="number" name="spoken" />
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels">Read %</label>
+                          <input type="number" name="number" name="read" />
+                        </div>
+                        <div class="col-4">
+                          <label class="fieldlabels">Grammar %</label>
+                          <input type="number" name="number" name="grammar" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="col-12 p-4 mx-auto">
+                        <label class="fieldlabels"
+                          >Computer Skills <span class="required-field">*</span>
+                        </label>
+                        <select class="form-control">
+                          <option value="choose">Choose...</option>
+                          <option value="Low">Low</option>
+                          <option value="Medium">Medium</option>
+                          <option value="Advanced">Advanced</option>
+                          <option value="Native">Native</option>
+                        </select>
+                      </div>
+                      <div class="col-12 col-sm-12 p-0 mt-4 text-center">
+                        <label class="fieldlabels">Words per minute</label>
+                        <input
+                          type="number"
+                          name="palabras por minuto"
+                          class="w-50"
+                        />
+                        <br />
+                        <a href="#">
+                          <span>You do not know?, take a optional test here!</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <input
+                  type="button"
+                  name="next3"
+                  class="next3 action-button"
+                  value="Next"
+                />
+                <input
+                  type="button"
+                  name="previous"
+                  class="previous action-button-previous"
+                  value="Previous"
+                />
+              </fieldset>
+
+              <!-- fieldsets 4 -->
+              <fieldset>
+                <div class="form-card">
+                  <div class="row">
+                    <div class="col-12 col-sm-6">
+                      <h2 class="fs-title">Other</h2>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <h2 class="steps">Step 4 - 4</h2>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="form-row">
+                    <div class="col-12 col-sm-5">
+                      <div class="row">
+                        <div class="col-12 col-sm-12">
+                          <label class="fieldlabels">Referred</label>
+                          <input
+                            type="text"
+                            name="referred"
+                            placeholder="Enter full name or employee number"
+                          />
+                        </div>
+                        <div class="col-12 col-sm-6">
+                          <label class="fieldlabels"
+                            >How did you meet us?</label
+                          >
+                          <select class="form-control">
+                            <option value="choose">Choose...</option>
+                            <option value="internet">Internet</option>
+                            <option value="friend">Friend</option>
+                            <option value="advertising">Advertising</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                          <label class="fieldlabels">Other</label>
+                          <input
+                            type="text"
+                            name="otherReferred"
+                            placeholder="Other"
+                            disabled
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-7">
+                      <label class="fieldlabels">Something about you</label>
+                      <textarea name="something" rows="7"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <input
+                  type="button"
+                  name="next4"
+                  class="next4 action-button"
+                  value="Submit"
+                />
+                <input
+                  type="button"
+                  name="previous"
+                  class="previous action-button-previous"
+                  value="Previous"
+                />
+              </fieldset>
+
+              <!--Final-->
+              <fieldset>
+                <div class="form-card">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="fs-title">Finish:</h2>
+                    </div>
+                  </div>
+                  <div class="col-5 bg-warning">
+                    <h2 class="steps"></h2>
+                  </div>
+                  <br />
+                  <br />
+                  <h2 class="purple-text text-center">
+                    <strong>Thank You !</strong>
+                  </h2>
+                  <br />
+                  <div class="row justify-content-center">
+                    <div class="col-3">
+                      <img src="final.png" class="fit-image" />
+                    </div>
+                  </div>
+                  <br /><br />
+                  <div class="row justify-content-center">
+                    <div class="col-7 text-center">
+                      <h5 class="purple-text text-center">
+                        You Have Successfully Completed the Job Application
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
